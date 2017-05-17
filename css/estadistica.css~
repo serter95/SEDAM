@@ -1,0 +1,165 @@
+/*body {
+	background: #f1f1f1;
+	margin: 5px 0px 0px 100px;
+}*/
+
+ast {
+	color:red;
+}
+
+lettab {
+	color:black;
+	font-size:15;
+}
+
+letcol {
+	color:black;
+	font-size:12;
+}
+
+cancelar {
+	margin:100px 0px 0px 0px;
+}
+/*
+a:link { 
+	text-decoration:none;
+	color:maroon;
+}
+
+a:visited{
+	text-decoration:none;
+	color:olive;
+}
+
+a:active{
+	text-decoration:none;
+	color:silver;
+	
+}*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.sesion {
+	height: 27px;
+	width: 100px;
+	border-radius: 15px 0px 0px 15px;
+	text-align: right;
+	float: right;
+}
+.sesion:hover{
+	border: 0px solid rgba(50, 50, 50, 3);
+	background: -moz-linear-gradient(right, rgba(50, 50, 50, 3) , white);
+	background: -webkit-linear-gradient(rigth, rgba(50, 50, 50, 3) , white);
+	height: 27px;
+	width: 300px;
+
+}
+
+.campo_c {
+	height: 70px;
+	width: 300px;
+	background-color: #d3d3d3;
+	border: 2px solid #813530;
+	border-radius: 8px;
+	margin: 5px;
+	display:inline-block;
+	padding: 2px;
+}
+.cam {
+	color: #464646;
+	border: 1px solid #479b5d;
+	padding: 4px; 
+	margin: 2px;
+	border-radius: 4px;
+}
+.cam:hover {
+	border: 1px solid #2ad356;
+	}
+.titulo{
+	text-align:center;
+}
+table {
+	border:0px solid black;
+	position:;
+	left:;
+	text-align:center;
+	width: 750px;
+}
+
+input[type=submit] {
+ 	color:#ffffff;
+	border: 1px solid #ffffff;
+	background-color:green;
+	padding: 4px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 4px;
+}
+
+select{
+ 	color:#000000;
+	border: 1px solid #000000;
+	background-color:#ffffff;
+	padding: 1px; 
+	margin: 5px;
+	border-radius: 4px;
+	width:40px;
+}
+
+input[type=text]{
+ 	color:#000000;
+	border: 1px solid #000000;
+	background-color:#ffffff;
+	padding: 1px; 
+	margin: 5px;
+	border-radius: 4px;
+	width:120px;
+	height:25px;
+}
+
+.botones {
+	position:relative;
+	margin: 0px 0px 0px -30px;
+	width:100px;
+	height:60px;
+}
+
+.cancelar {
+	position:relative;
+	margin: 25px 0px 0px 20px;
+	width:50px;
+	height:25px;
+}
+
+input[type=number] {
+ 	color:#000000;
+	border: 1px solid #000000;
+	background-color:#ffffff;
+	padding: 1px; 
+	margin: 5px;
+	border-radius: 4px;
+	width:120px;
+}
+
+/*input[type=number] co{
+ 	color:#000000;
+	border: 1px solid #000000;
+	background-color:#ffffff;
+	padding: 1px; 
+	margin: 5px;
+	border-radius: 4px;
+	width:60px;
+}*/
+
+input[type=password] {
+ 	color:#000000;
+	border: 1px solid #000000;
+	background-color:#ffffff;
+	padding: 1px; 
+	margin: 5px;
+	border-radius: 4px;
+	width:120px;
+	height:25px;
+}

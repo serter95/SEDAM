@@ -1,0 +1,10 @@
+<?php
+
+$host="localhost";
+$user="root";
+$pw="";
+$bd="aplicacion";
+
+$con=mysql_connect ($host, $user, $pw) or die("Error servidor".(mysql_error()));
+mysql_select_db ($bd, $con) or die("Error bd".(mysql_error()));
+?>

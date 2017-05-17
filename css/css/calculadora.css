@@ -1,0 +1,171 @@
+#pantalla, #signo1, input, #general, #numpad1, #numpad2,  #radio, #v1, #v2, #boton, #center {
+
+	width:0px;
+	height:0px;
+}
+
+A:link,A:visited,A:active { 
+text-decoration:none; 
+
+}
+#pantalla{
+	background: url("../img/bb.jpg");
+	border: 2px solid #fff;
+	box-shadow: 3px 0px 30px 5px #222;
+	height: 410px;
+	position:relative;
+	left:220px;
+	top: 20px;
+	width: 760px;
+}
+
+.visor{
+	position: relative;
+	left: 470px;
+	top: 100px;
+	background:transparent;
+	color: #999;
+	font-size: 40px;
+	width: 60px;
+	height: 60px;
+	border: 0px solid black;
+}
+button {
+	background: transparent;
+	border: 0px solid black;
+}
+
+
+#general{
+	
+	position: relative;
+	left: -100px;
+	top: -270;
+}
+#numpad1, #numpad2{
+	position: relative;
+	left: 320px;
+	top: 100px;
+	padding:3px;
+	width: 400px;
+}
+#numpad2{
+	top: 150px;
+}
+#radio{
+	display: inline-block;
+	width:44px;
+	height:44px;
+	padding: 2px;
+}
+#v1,#v2,#v3, #raya{
+	background:transparent;
+	color: #999;
+	font-size: 40px;
+	width: 60px;
+	height: 60px;
+	border: 0px solid black;
+}
+#v1{
+	border: 0px solid black;
+	color: #fff;
+	font-size: 40px;
+	height: 100px;
+	position: relative;
+	left: 175px;
+	top: 40px;
+	width: 100px;
+	z-index:2;
+}
+#v2{
+	color: #fff;
+	border: 0px solid black;
+	font-size: 40px;
+	height: 100px;
+	position: relative;
+	left: 175px;
+	top: 10px;
+	width: 100px;
+	z-index:2;
+}
+#v3{
+	color: #fff;
+	border: 0px solid black;
+	font-size: 40px;
+	height: 100px;
+	position: relative;
+	left: 175px;
+	top: -20px;
+	width: 100px;
+	z-index:2;
+}
+#raya{
+	height: 100px;
+	position:relative;
+	left: 153px ;
+	top: -110px;
+	width: 100px;
+}
+#boton{
+	color: #999;
+	font-size: 25px;
+	border: 1px solid #222;
+	border-radius: 7px;
+	width:46px;
+	height: 46px;
+	box-shadow: 1px 2px 1px 1px #111;
+
+}
+#boton:hover{
+	color: red;
+
+}
+
+#center {
+	border: 0px solid black;
+	position:relative;
+	top: 8px;
+	left:16px;
+	width: 10px;
+}
+#signo1{
+	border: 0px solid black;
+	color: #fff;
+	font-size: 45px;
+	height: 100px;
+	position: relative;
+	left: 540px;
+	top: -100px;
+	width: 100px;
+	z-index:2;
+
+}
+/*#signo2{
+	border: 0px solid black;
+	color: #fff;
+	font-size: 45px;
+	height: 100px;
+	position: relative;
+	left: 390px;
+	top: -80px;
+	width: 100px;
+	z-index:2;
+
+}
+#signo3{
+	border: 0px solid black;
+	color: #fff;
+	font-size: 45px;
+	height: 100px;
+	position: relative;
+	left: 480px;
+	top: -180px;
+	width: 100px;
+	z-index:2;
+
+}*/
+.bn{
+	position: relative;
+	top:-5;
+
+}
