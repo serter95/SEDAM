@@ -1,0 +1,11 @@
+<?php
+include ("seguridad.php");
+include ('conexion.php');
+
+$sql="UPDATE evaluacion SET activador='0' WHERE id_eva ='".$_REQUEST['id']."'";
+mysql_query($sql);
+?>
+<script language="javascript">
+	alert('La evaluaci\u00f3n fue activada con \u00c9xito');
+	location.href='accion_evaluacion.php';
+</script>

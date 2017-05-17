@@ -1,0 +1,84 @@
+#contenedor
+{
+	width: 200px;
+	margin: 30px auto;
+	height: 450px;
+	display: block;
+	background: #333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+ul#mainmenu, ul#mainmenu ul
+{
+	list-style: none;
+	padding: 5px;
+}
+
+ul#mainmenu li
+{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 5px 20px 15px 20px;
+	position: relative;
+	line-height: 18px;
+	width: 200px;
+}
+
+ul#mainmenu li a
+{
+	color: #FAFAFA;
+	text-decoration: none;
+}
+
+ul#mainmenu li a:hover
+{
+	color: #fff;
+
+}
+
+/*sub menu*/
+
+ul#mainmenu li ul
+{
+	background: #E1E1E1;
+	border-bottom: solid 2px #c1c1c1;
+	border-top: solid 2px #d1d1d1;
+	border-left: solid 1px #d1d1d1;
+	border-right: solid 1px #d1d1d1;
+	margin: 12px 0px 0px 0px;
+	padding: 0 10px 0;
+	width: 200px;
+	position: absolute;
+}
+ul#mainmenu li ul li
+{
+	border-bottom: 1px solid #C1C1C1;
+	display: block;
+	float: none;
+	height: 14px;
+	padding: 10px 0;
+	text-align: center;
+	margin: 0;
+	width: 130px;
+	background: none;
+
+}
+ul#mainmenu li ul li.last
+{
+	border-bottom: none;
+}
+ul#mainmenu li ul li a{
+	color: #313131;
+
+}
+ul#mainmenu li ul li a:hover
+{
+	color: #000;
+}
+ul#mainmenu li ul li:last-child:not(li.arrow)
+{
+	border: 0;
+}

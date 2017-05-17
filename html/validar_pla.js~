@@ -1,0 +1,209 @@
+alert("llamado al archivo validar_pla.js exitoso");
+
+function validar_planif()
+{
+
+	var proyecto = document.getElementById("proyecto").selectedIndex;
+	var num_planificacion = document.getElementById("num_planificacion").value;
+	var datepicker_i = document.getElementById("fecha_i").value;
+	var datepicker_f = document.getElementById("fecha_f").value;
+	var actividad = document.getElementById("actividad").value;
+	var descripcion = document.getElementById("descripcion").value;
+
+	if(proyecto == null || proyecto == 0)
+	{
+		alert("Elija un opcion del campo (proyecto)");
+		return false;
+	}
+	
+	if(num_planificacion == null || num_planificacion == 0 || /^\s+$/.test(num_planificacion) || !(/^[0-9]+$/.test(num_planificacion)))
+	{
+		alert("Llene el campo (Numero de planificacion) solo con numeros");
+		return false;
+	}
+
+	if(num_planificacion > 10)
+	{
+		alert("El campo (Numero de planificacion) de ser menor a 10");
+		return false;
+	}
+
+	if(num_planificacion < 1)
+	{
+		alert("El campo (Numero de planificacion) de ser mayor a 1");
+		return false;
+	}
+
+	if(datepicker_i == null || datepicker_i == 0 || /^\s+$/.test(datepicker_i))
+	{
+		alert("Escoja una fecha en el campo (Fecha Inicial)");
+		return false;
+	}
+
+	if(!(/^[0-9]{4}\/[0-9]{2}\/[0-9]{2}+$/.test(datepicker_i)))
+	{
+		alert("La fecha del campo (Fecha Inicial) de ordenarse en Dia/Mes/Ano ");
+		return false;
+	}
+
+	if(datepicker_f == null || datepicker_f == 0 || /^\s+$/.test(datepicker_f))
+	{
+		alert("Escoja una fecha en el campo (Fecha Final)");
+		return false;
+	}
+
+	if(!(/^[0-9]{4}\/[0-9]{2}\/[0-9]{2}+$/.test(datepicker_f)))
+	{
+		alert("La fecha del campo (Fecha Final) de ordenarse en Dia/Mes/Ano ");
+		return false;
+	}
+
+	if(actividad == null || actividad == 0 || /^\s+$/.test(actividad) !(/^[a-zA-Z]/.test(actividad)))
+	{
+		alert("Llene el campo (Actividad) comenzando con letras");
+		return false;
+	}
+
+	if(actividad.length > 50)
+	{
+		alert("El campo (Actividad) no debe exceder los 50 caracteres");
+		return false;
+	}
+
+	if(descripcion == null || descripcion == 0 || /^\s+$/.test(descripcion) !(/^[a-zA-Z]/.test(descripcion)))
+	{
+		alert("Llene el campo (Descripcion) comenzando con letras");
+		return false;
+	}
+
+	if(descripcion.length > 256)
+	{
+		alert("El campo (Descripcion) no debe exceder los 256 caracteres");
+		return false;
+	}
+
+	return true;
+
+}
+
+
+function validarcrear_tema()
+
+	{
+		var momento_v = document.getElementById("momento").selectedIndex;
+		var proyecto_v = document.getElementById("proyecto").selectedIndex;
+		var objetivo_v = document.getElementById("objetivo").value;
+		var titulo_v = document.getElementById("titulo").value;
+		var contenido_v = document.getElementById("contenido").value;
+		var descripcion_v = document.getElementById("descripcion").value;
+		var archivo1 = document.getElementById("ejemplo1").selectedIndex;
+		var archivo2 = document.getElementById("ejemplo2").selectedIndex;
+		var archivo3 = document.getElementById("ejemplo3").selectedIndex;
+		var archivo4 = document.getElementById("ejemplo4").selectedIndex;
+		
+		if(momento_v == 0 || momento_v == null)
+		{
+			alert("Seleccione una opcion del campo (Momento)");
+			return false;
+		}
+			
+		if(proyecto_v == 0 || proyecto_v == null)
+		{
+			alert("Seleccione una opcion del campo (Proyecto)");
+			return false;
+		}
+			
+	
+		if(objetivo_v == null || /^\s+$/.test(objetivo_v) || !(/^[0-9]+$/.test(objetivo_v)))
+		{
+			alert("Llene el campo (objetivo) solo con numeros");
+			return false;
+		}
+
+		if(objetivo_v > 10)
+		{
+			alert("El campo (objetivo) debe ser menor de 10");
+			return false;
+		}
+
+		if(objetivo_v < 1)
+		{
+			alert("El campo (objetivo) debe ser mayor de 0");
+			return false;
+		}
+		
+		if(titulo_v == null ||  /^\s+$/.test(titulo_v) || titulo_v == 0)
+		{
+			alert("Coloque el (titulo del tema)");
+			return false;
+		}
+
+		if(titulo_v.length > 100 || !(/^[a-zA-Z]/.test(titulo_v)))
+		{
+			alert("El (titulo del tema) debe comenzar solo con letras");
+			return false;
+		}
+		
+		if(contenido_v == null || contenido == 0 || /^\s+$/.test(contenido_v))
+		{
+			alert("Llene el (desarrollo del tema)");
+			return false;
+		}
+		
+		if(!(/^[a-zA-Z]/.test(contenido_v)))
+		{
+			alert("El (desarrollo del tema) debe comenzar solo con letras");
+			return false;
+		}
+
+		if(contenido_v > 500)
+		{
+			alert("El (desarrollo del tema) no puede exceder los 500 caracteres");
+			return false;
+		}
+
+		if(descripcion_v == null || descripcion_v == 0 || /^\s+$/.test(descripcion_v))
+		{
+			alert("Llene la (descripcion del contenido)");
+			return false;
+		}
+		
+		if(!(/^[a-zA-Z]/.test(descripcion_v)))
+		{
+			alert("La (descripcion del contenido) debe comenzar solo con letras");
+			return false;
+		}
+
+		if(descripcion_v > 256)
+		{
+			alert("La (descripcion del contenido) no puede exceder los 256 caracteres");
+			return false;
+		}
+
+		if(archivo1 == null || archivo1 == 0)
+		{
+			alert("Debe agregar una imagen en el campo (Ejemplo 1)");
+			return false;
+		}
+
+		if(archivo2 == null || archivo2 == 0)
+		{
+			alert("Debe agregar una imagen en el campo (Ejemplo 2)");
+			return false;
+		}
+
+		if(archivo3 == null || archivo3 == 0)
+		{
+			alert("Debe agregar una imagen en el campo (Ejemplo 3)");
+			return false;
+		}
+
+		if(archivo4 == null || archivo4 == 0)
+		{
+			alert("Debe agregar una imagen en el campo (Ejemplo 4)");
+			return false;
+		}
+
+		return true;
+	}
+

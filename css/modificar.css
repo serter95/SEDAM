@@ -1,0 +1,287 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+@font-face{
+	font-family:"evaluacion";
+	font-style: normal;
+	src:url("../img/evaluacion.ttf");
+}
+.tabla_e{
+	width: auto !important;
+	height: auto !important;
+}
+
+#formulario{
+	
+	float:left;
+	margin-left: 20px;
+	width:750px;
+
+}
+
+#validacion{
+	float:right;
+	width: 200px;
+	margin-top: 20px;
+	/*position:relative;
+	left: 300px;
+	top: -400px;*/
+	
+}
+
+.reloj{
+background: transparent;
+font-family: Ubuntu Medium;
+font-size:17px;
+color:#FFFFFF;
+width:140px;
+margin: 5px;
+
+}
+
+.actualizar{
+	padding: 10px;
+	margin: 4px;
+	height: 400px;
+	width: 600px;
+	background-color: #d3d3d3;
+	border: 2px solid #813530;
+	border-radius: 8px;
+	margin: 5px;
+	display:inline-block;
+	padding: 2px;
+}
+
+.label{
+	color: #222;
+	font-weight: bold;
+	margin-left: 30px;
+}
+.label_v{
+	color: #222;
+	font-size: 20px;
+	font-weight: bold;
+}
+.proyecto{
+	border: 2px solid #536e9b;
+	color: #464646;
+	padding: 4px; 
+	margin: 10px;
+	border-radius: 4px;
+	width: 150px;
+}
+
+.textarea_c {
+	resize: none;
+	width: 340px;
+	height: 117px;
+	margin: 5px;
+	margin-bottom: 5px;
+}
+.textarea_e {
+	resize: none;
+	width: 300px;
+	height: 55px;
+	margin: 5px;
+	margin-bottom: 5px;
+}
+.fecha {
+	border: 2px solid #536e9b;
+	color: #464646;
+	padding: 4px; 
+	margin: 10px;
+	border-radius: 4px;
+	width: 90px;
+}
+
+.caja, .caja_e , .enunciado, .c_titulo, .textarea, .textarea_c, .textarea_e, .fecha{
+	color: #464646;
+	border: 2px solid #536e9b;
+	padding: 4px; 
+	margin: 5px;
+	border-radius: 4px;
+}
+.caja:hover, .enunciado:hover, .caja_e:hover, .textarea:hover, .cajat:hover, .textarea_c:hover{
+	border: 2px solid #0099CC;
+}
+
+.caja {
+	color: #464646;
+	border: 2px solid #536e9b;
+	padding: 4px; 
+	margin: 8px 0 0 5px;
+	width:140px;
+	border-radius: 4px;
+}
+.actividad{
+	color: #464646;
+	border: 2px solid #536e9b;
+	padding: 4px; 
+	margin: 0 0 0 5px;
+	width: 200px;
+	border-radius: 4px;
+}
+.caja_e
+{
+	width: 54px !important;
+}
+
+.enunciado{
+	font-family: evaluacion;
+	font-size: 20px;
+	width: 250px;
+}
+
+.selector{
+	border: 2px solid #536e9b;
+	color: #464646;
+	padding: 4px; 
+	margin: 10px;
+	border-radius: 4px;
+	width: 50px;
+}
+
+.selector:hover{
+	border: 2px solid #0099CC;
+	color: #464646;
+	padding: 4px; 
+	margin: 10px;
+	border-radius: 4px;
+}
+.cajat{
+	width: 700px;
+	height: 30px;
+	font-size: 14px;
+}
+.file{
+	margin-bottom: 5px;
+}
+.textarea {
+	height: 200px;
+	resize: none;
+	width: 350px;
+}
+
+.modificar{
+	cursor:	pointer;
+	position: absolute;
+	top: 600px;
+	left: 1060px;
+ 	color:white;
+	border: 1px solid #b2372d;
+	background-color:#b2372d;
+	padding: 4px; 
+	margin: 2px;
+	border-radius: 4px;
+}
+
+.modificar:hover, .guardar:hover{
+ 	color:white;
+	border: 1px solid #222;
+	background-color:#b01009;
+	padding: 4px; 
+	margin: 2px;
+	border-radius: 4px;
+}
+
+.guardar{
+	cursor:	pointer;
+	color:white;
+	border: 1px solid #b2372d;
+	background-color:#b2372d;
+	padding: 4px; 
+	margin: 2px;
+	border-radius: 4px;
+
+}
+
+.tema {
+	margin: 30px;
+	font-size: 35px;
+}
+.contenidot{
+	color: #222222 ;
+	display:inline-block;
+	font-size: 18px;
+	margin-left: 30px;
+	margin-botton: 30px;
+	margin-top: 30px;
+	margin-right: 30px;
+	text-align:justify;
+}
+
+.titulo{
+	color: #222222 ;
+	display: block;
+	font-size: 18px;
+	margin-left: 30px;
+	margin-botton: 30px;
+	margin-top: 30px;
+	margin-right: 30px;
+	text-align:justify;
+	
+}
+
+
+.fecha_modificacion{
+	color: #222 ;
+	font-size: 13px;
+	position: relative;
+	left: 550px;
+	top: -20px;
+	width: 200px;
+}
+
+.cont_imagen{
+	color: #000000 ;
+	border-right: 1px solid silver;
+	font-size: 18px;
+	position: relative;
+	left: 0px;
+	top: 20px;
+	width: 465px;
+}
+
+.image{
+	color: #FFFFFF ;
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-botton: 10px;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.cont_video{
+	color: #000000 ;
+	display: inline-block;
+	font-size: 18px;
+	position: absolute;
+	left: 490px;
+	top: 25px;
+	height: auto;
+}
+.video1{
+	margin-bottom: 20px;
+	margin-top: 5px;
+
+}
+.crear_tema{
+	margin: 5px;
+	text-align: center !important;
+}
+
+.textarea_e {
+	resize: none !important; 
+	width: 284px !important;
+	height: 55px !important;
+	margin: 2px !important;
+	margin-bottom: 5px !important;
+}
+.c_titulo{
+	width: 660px !important;
+	height: 30px !important;
+	font-size: 14px !important;
+}
+

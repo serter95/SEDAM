@@ -1,0 +1,147 @@
+body {
+	background: #f1f1f1;
+	margin: 5px 0px 0px 170px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#contenedor {
+	height: 650px;
+	max-width: 1000px;
+}
+#header, #pie{
+	background:white;
+	border: 1px solid black;
+}
+
+#header, #cuerpo{
+	max-width: 1000px;
+}
+#header {
+	border-radius: 15px 15px 0px 0px;
+	max-height: 140px;
+	height: 100%;
+}
+
+#logoi, #mem, #logou{
+	margin:0;
+	padding:0;
+	display: inline-block;
+	max-width:198px;
+	max-height:148px;
+	width:100%;
+	height:100%;
+}
+
+#mem {
+	max-width:590px;
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+
+#logou {
+	max-width:198px;
+	width:100%;
+	height:100%;
+}
+
+#botonera{
+	background: #99BBFF;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 998px;
+	height: 30px;
+	text-transform: capitalize;
+	text-align:center;
+	font-size:30;
+}
+#cuerpo {
+	background:#99BBFF;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	max-width:0 auto;	
+	max-height: 450px;
+	height: 450px;
+	width:0 auto;
+	
+	text-align:center;
+}
+#contenido {
+	background: none ;#99BBFF
+	max-width:500px;
+	max-height: 0 auto;
+	height: 0 auto;
+	text-align:center;
+	float:left;
+	margin:0px 10px 0px 315px;
+}
+#menu {
+float: left;
+display: block;
+}
+
+#nav {
+	width: 1000px;
+	height:30px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#nav li {
+	background: #fff;
+	border-bottom: 1px solid #666;
+	list-style: none;
+	width: 250px;
+}
+
+#nav li a {
+display: block;
+padding: 8px;
+border-left: 4px solid #444;
+text-decoration: none;
+box-shadow: 2px 2px 5px #ccc;
+color: #555;
+}
+
+#nav li a:hover {
+border-left: 4px solid #069;
+background: #f8f8f8;
+}
+
+#nav li ul {
+display: none;
+}
+#nav li:hover ul {
+display: block;
+}
+
+#nav li:hover ul li {
+background: #333;
+}
+
+#nav li:hover ul li a {
+color: #ccc;
+}
+
+#nav li:hover ul li a:hover {
+background: #222;
+border-left: 4px solid #900;
+}
+
+.linea{
+	position: absolute;
+	float:left;
+	margin:20px 0px 0px 260px;
+}
+
+#pie{
+	border-radius: 0px 0px 15px 15px;
+	max-height: 26px;
+	height:100%;
+	text-align: center;
+}
