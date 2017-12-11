@@ -1,2 +1,2 @@
 # SEDAM
-Sistema Dirigido al Aprendizaje de las Matemàticas de 4to Grado
+Sistema Educativo Dirigido al Aprendizaje de las Matemáticas de 4to grado
